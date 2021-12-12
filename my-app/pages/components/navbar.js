@@ -2,26 +2,28 @@ import Link from "next/link";
 import Image from "next/image";
 function Nav() {
   return (
-    <ul>
-      <li>
-        <Image src="/logo.png" width={100} height={100} />
-      </li>
-      <li>
+    <div>
+      <ul>
+        <li>
+          <Image src="/logo.png" width={100} height={100} />
+        </li>
         <Link href="/">
-          <a>Home</a>
+          <li>
+            <a>Home</a>
+          </li>
         </Link>
-      </li>
-      <li>
         <Link href="/About">
-          <a>About Us</a>
+          <li>
+            <a>About Us</a>
+          </li>
         </Link>
-      </li>
-      <li>
-        <Link href="/Post">
-          <a> Posts </a>
+        <Link href="/post">
+          <li>
+            <a> Posts </a>
+          </li>
         </Link>
-      </li>
-    </ul>
+      </ul>
+    </div>
   );
 }
 

@@ -12,16 +12,17 @@ export async function getStaticProps(context) {
 function Post({ posts }) {
   console.log(posts);
   return (
-    <ul>
+   <div>
       {posts.map((post) => (
         <Link href={`Post/${post.id}`} key={post.id}>
-          <li>
+          <div>
             <h3>{post.title}</h3>
             <p>{post.body}</p>
-          </li>
+            </div>
         </Link>
+        
       ))}
-    </ul>
+  </div>
   );
 }
 
