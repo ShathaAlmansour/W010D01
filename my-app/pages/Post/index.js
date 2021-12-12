@@ -14,7 +14,7 @@ function Post({ posts }) {
   return (
    <div>
       {posts.map((post) => (
-        <Link href={`Post/${post.id}`} key={post.id}>
+        <Link href={`post/${post.id}`} key={post.id}>
           <div>
             <h3>{post.title}</h3>
             <p>{post.body}</p>
