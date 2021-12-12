@@ -8,21 +8,19 @@ export async function getStaticProps(context) {
     props: { posts },
   };
 }
-// gg
+
 function Post({ posts }) {
-  console.log(posts);
   return (
-   <div>
+    <div>
       {posts.map((post) => (
-        <Link href={`post/${post.id}`} key={post.id}>
+        <Link href={`Post/${post.id}`} key={post.id}>
           <div>
             <h3>{post.title}</h3>
             <p>{post.body}</p>
-            </div>
+          </div>
         </Link>
-        
       ))}
-  </div>
+    </div>
   );
 }
 

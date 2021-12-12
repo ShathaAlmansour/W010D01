@@ -17,7 +17,7 @@ function Nav() {
             <a>About Us</a>
           </li>
         </Link>
-        <Link href="/post">
+        <Link href="/Post">
           <li>
             <a> Posts </a>
           </li>
