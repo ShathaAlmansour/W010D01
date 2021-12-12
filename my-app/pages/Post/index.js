@@ -8,7 +8,7 @@ export async function getStaticProps(context) {
     props: { posts },
   };
 }
-
+// gg
 function Post({ posts }) {
   console.log(posts);
   return (
